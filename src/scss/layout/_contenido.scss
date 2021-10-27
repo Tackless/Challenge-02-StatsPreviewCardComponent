@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.container-header {
+    padding: 2rem 5rem;
+    margin: 1rem 4rem;
+    line-height: 4rem;
+    span {
+        color: v.$soft_violet;
+    }
+    p {
+        color: v.$slightly_transparent_white_main;
+        line-height: 2rem;
+    }
+    .stats {
+        font-family: v.$font_text;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        line-height: 1.4rem;
+        p {
+            color: v.$slightly_transparent_white_stat;
+            text-transform: uppercase;
+        }
+    }
+}
+.img {
+    background-image: url(/build/img/image-header-mobile.webp);
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 20rem;
+    display: flex;
+    @include m.desktop {
+        border-radius: 0 1rem 1rem 0;
+        grid-column: 2/3;
+    } 
+}
+.overlay {
+    position: relative;
+    min-height: 20rem;
+    border-radius: 0 1rem 1rem 0;
+    background: rgb(170,92,219);
+    background: linear-gradient(270deg, rgba(170,92,219,0.5) 0%, rgba(170,92,219,0.5) 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

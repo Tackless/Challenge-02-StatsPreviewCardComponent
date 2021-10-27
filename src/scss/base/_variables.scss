@@ -1,0 +1,18 @@
+// Tamaños de Media Queries
+$phone: 468px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXL: 1200px;
+
+// Colors
+$very_dark_blue:  hsl(233, 47%, 7%); // main background
+$dark_desaturated_blue: hsl(244, 38%, 16%); // card background
+$soft_violet: hsl(277, 64%, 61%); // accent
+
+$white: hsl(0, 0%, 100%); // main heading, stats
+$slightly_transparent_white_main: hsla(0, 0%, 100%, 0.75); // main paragraph
+$slightly_transparent_white_stat: hsla(0, 0%, 100%, 0.6); // stat headings
+
+// Fonts
+$font_text: 'Inter', sans-serif;
+$font_title: 'Lexend Deca', sans-serif;

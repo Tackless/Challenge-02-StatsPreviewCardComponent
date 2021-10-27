@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: v.$font_title;
+    font-size: 1.5rem;
+    background-color: v.$very_dark_blue;
+    color: v.$white;
+}
+
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 10rem auto;
+    background-color: v.$dark_desaturated_blue;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    @include m.desktop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .container-header {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+    } 
+}
+.attribution {
+    color: v.$white;
+    text-align: center;
+    a {
+        color: v.$slightly_transparent_white_main;
+        text-decoration: none;
+    }
+}
