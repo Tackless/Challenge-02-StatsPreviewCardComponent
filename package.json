@@ -27,5 +27,13 @@
     "gulp-webp": "^4.0.1",
     "postcss": "^8.3.11",
     "sass": "^1.43.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tackless/Stats-Preview-Card-Component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tackless/Stats-Preview-Card-Component/issues"
+  },
+  "homepage": "https://github.com/Tackless/Stats-Preview-Card-Component#readme"
 }
